@@ -34,7 +34,6 @@
             // 
             // notifyIcon
             // 
-            this.notifyIcon.Text = "notifyIcon1";
             this.notifyIcon.Visible = true;
             // 
             // Main

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using TopMost.Properties;
 
@@ -24,6 +25,11 @@ namespace TopMost
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Win32Api.UnregisterHotKey(Handle, 0);
+        }
+
+        private void Main_Shown(object sender, EventArgs e)
+        {
+            Visible = false;
         }
 
         [Flags]
